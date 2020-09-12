@@ -1,12 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
 const SubjectItems = ({ title, value, icon }) => {
+  const [initialValue, setInitialValue] = useState(0);
+
+  useEffect(() => {
+    const updateCount = () => {
+      const target = value;
+      const count = initialValue;
+
+      if (count < target) {
+        setInitialValue((prev) => prev + 100);
+      } else {
+        setInitialValue(target);
+      }
+    };
+
+    updateCount();
+  }, [initialValue]);
+
   return (
     <div>
       <h1>{title}</h1>
       <i className={icon} />
-      <p>{value}</p>
+      <p>{initialValue}</p>
     </div>
   );
 };

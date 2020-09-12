@@ -25,7 +25,7 @@ const Subjects = () => {
   ];
 
   const icons = [
-    'fas fa-briefcase-medical',
+    'fas fa-virus',
     'fas fa-skull-crossbones',
     'fas fa-hand-holding-medical',
     'fas fa-globe-europe',
@@ -35,17 +35,15 @@ const Subjects = () => {
 
   let values;
 
-  {
-    data !== undefined &&
-      (values = [
-        data.cases,
-        data.deaths,
-        data.recovered,
-        data.todayCases,
-        data.todayDeaths,
-        data.todayRecovered,
-      ]);
-  }
+  data !== undefined &&
+    (values = [
+      data.cases,
+      data.deaths,
+      data.recovered,
+      data.todayCases,
+      data.todayDeaths,
+      data.todayRecovered,
+    ]);
 
   return (
     <section>
