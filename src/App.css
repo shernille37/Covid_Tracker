@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Impact|PT+Serif');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +8,7 @@
 
 body {
   background-color: #333;
+  position: relative;
 }
 
 .main {
@@ -20,9 +23,11 @@ body {
 .main header {
   text-align: center;
   margin-top: 1rem;
+  padding: 0.5rem;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 2rem;
   color: #fff;
+  letter-spacing: 0.5rem;
 }
 
 .main section {
@@ -36,6 +41,7 @@ body {
 }
 
 .main section div {
+  font-family: PT Serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,6 +69,15 @@ body {
   margin: 1rem;
 }
 
+footer {
+  margin-top: 0.5rem;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 0.3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 @media (max-width: 1075px) {
   .main header {
     margin-top: 0;
@@ -79,10 +94,18 @@ body {
 }
 
 @media (max-width: 725px) {
+  .main {
+    height: 100%;
+  }
+
   .main header {
-    margin-top: 10rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 1.5rem;
+  }
+
+  .main header h2 {
+    font-size: 4rem;
   }
 
   .main section {
@@ -92,5 +115,6 @@ body {
 
   .main section div {
     width: 80%;
+    height: 200px;
   }
 }

@@ -10,20 +10,22 @@ const SubjectItems = ({ title, value, icon }) => {
       const count = initialValue;
 
       if (count < target) {
-        setInitialValue((prev) => prev + 1);
+        setTimeout(() => {
+          setInitialValue((prev) => prev + 500);
+        }, 1);
       } else {
         setInitialValue(target);
       }
     };
 
     updateCount();
-  }, [initialValue]);
+  }, [initialValue, value]);
 
   return (
     <div>
       <h1>{title}</h1>
       <i className={icon} />
-      <p>{initialValue}</p>
+      <p>{initialValue.toLocaleString('en')}</p>
     </div>
   );
 };
