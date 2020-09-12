@@ -28,6 +28,11 @@ body {
   letter-spacing: 0.5rem;
 }
 
+.main header p {
+  font-family: 'Kufam', 'Impact', serif;
+  font-size: 3rem;
+}
+
 .main section {
   height: 100%;
   width: 100%;
