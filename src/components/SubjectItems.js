@@ -10,7 +10,7 @@ const SubjectItems = ({ title, value, icon }) => {
       const count = initialValue;
 
       if (count < target) {
-        setInitialValue((prev) => prev + 20);
+        setInitialValue((prev) => prev + 1);
       } else {
         setInitialValue(target);
       }
