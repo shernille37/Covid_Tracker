@@ -24,7 +24,7 @@ body {
   text-align: center;
   margin-top: 1rem;
   padding: 0.5rem;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact;
   font-size: 2rem;
   color: #fff;
   letter-spacing: 0.5rem;
@@ -41,7 +41,7 @@ body {
 }
 
 .main section div {
-  font-family: PT Serif;
+  font-family: 'PT Serif';
   display: flex;
   flex-direction: column;
   justify-content: center;
