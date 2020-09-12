@@ -18,7 +18,7 @@ const Subjects = () => {
   const titles = [
     'Total Cases',
     'Total Deaths',
-    'Total Recovered',
+    'Total Recoveries',
     'Cases Today',
     'Deaths Today',
     'Recovered Today',
